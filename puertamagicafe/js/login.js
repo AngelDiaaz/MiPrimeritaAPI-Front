@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         if( username != "" && password != "" ){
             $.ajax({
-                url:'https://localhost:44367/Login/CheckLogin',
+                url:'https://localhost:5001/Login',
                 type:'post',
                 data:JSON.stringify({Name:username,Password:password}),
                 contentType:"application/json; charset=utf-8",
