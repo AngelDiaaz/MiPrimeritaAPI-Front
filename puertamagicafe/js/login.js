@@ -28,7 +28,7 @@
 // });
 
 function login(){
-    let username = $("#email").val().trim();
+    let username = $("#user").val().trim();
     let password = $("#pwd").val().trim();
 
     console.log(username)
