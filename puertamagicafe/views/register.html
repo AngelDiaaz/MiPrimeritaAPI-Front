@@ -15,11 +15,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
     <body>
         <div class="jumbotron">
-            <h1>Login</h1>
+            <h1>Register</h1>
         </div>
             <div class="container-sm">
                 <div class="d-flex justify-content-center">
                 <div class="col-8">
+                    <div class="form-group">
+                    <label for="user">User:</label>
+                    <input type="text" class="form-control" placeholder="josemakina" id="user" required>
+                    </div>
                     <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" placeholder="superman007@gmail.com" id="email" required>
@@ -28,8 +32,16 @@
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" placeholder="Password" id="pwd" required>
                     </div>
-                    <button type="button" class="btn btn-primary" id="btn-login" onclick="login()">Hacer login</button>
-                    <button type="button" class="btn btn-primary" id="btn-register" onclick="goregister()">Registro</button>
+                    <div class="form-group">
+                    <div class="form-group">
+                    <label for="pwd">Repeat Password:</label>
+                    <input type="password" class="form-control" placeholder="Password" id="re-pwd" required>
+                    </div>
+                    <label for="pwd">Date Birthday:</label>
+                    <input type="date" class="form-control" placeholder="01/01/2000" id="date" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn-register" onclick="register()">Registrarse</button>
+                    <button type="button" class="btn btn-primary" id="btn-back" onclick="back()">Volver</button>
                     <div class="alert alert-danger alert-dismissible" style="display:none;" id="error">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>ERROR!</strong> Login incorrecto.
@@ -37,6 +49,8 @@
                 </div>
             </div>
             </div>
-        <script src="../js/login.js"></script>
+            <script src="../js/login.js"></script>
+        <!-- <script src="../js/register.js"></script> -->
+        
     </body>
 </html>
