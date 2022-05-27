@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Pokedex Web</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->     
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -13,10 +14,15 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
-    <body>
-        <div class="jumbotron"><h1>Bienvenido</h1></div>
-        <div id="users"><h3>User</h3></div>
-    </body>
-    
-    <script src="../js/welcome.js"></script>
+        <body>
+            <div class="jumbotron"><h1>Bienvenido</h1></div>
+            <div id="alumnos"><h3>Alumnos</h3></div>
+            <br><br><br>
+            <button type="button" class="btn btn-primary" id="btn-back" onclick="back()">Cerrar Sesión</button>
+            <button type="button" class="btn btn-primary" id="btn-add" onclick="add()">Añadir alumnos</button>
+            <button type="button" class="btn btn-primary" id="btn-update" onclick="update()">Actualizar Alumnos</button>
+            <button type="button" class="btn btn-primary" id="btn-delete" onclick="delet()">Eliminar alumnos</button>
+        </body>
+        <script src="../js/welcome.js"></script>
+        
 </html>

@@ -8,7 +8,7 @@ $(document).ready(function(){
             let alumnos = response
             alumnos.forEach(alumno => {
                 console.log(alumno)
-                $("#users").append('<li>'+alumno.nombre+'</li>')
+                $("#alumnos").append('<li>'+alumno.nombre+'</li>')
             });
             
         },
@@ -19,3 +19,19 @@ $(document).ready(function(){
         
   
 });
+
+function back(){
+    window.location = "index.html";
+}
+
+function add(){
+    window.location = "add.html";
+}
+
+function update(){
+    window.location = "update.html";
+}
+
+function delet(){
+    window.location = "delete.html";
+}
