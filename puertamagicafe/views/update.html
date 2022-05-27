@@ -16,33 +16,33 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
     <body>
         <div class="jumbotron">
-            <h1>Add Alumnos</h1>
+            <h1>Update</h1>
         </div>
             <div class="container-sm">
                 <div class="d-flex justify-content-center">
                 <div class="col-8">
                     <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" placeholder="josemakina" id="name" required>
-                    </div>
-                    <div class="form-group">
-                    <label for="dni">DNI:</label>
+                    <label for="dni">DNI del Alumno que quieres modificar:</label>
                     <input type="text" class="form-control" placeholder="12345678A" id="dni" required>
                     </div>
                     <div class="form-group">
-                    <label for="pin">PIN:</label>
+                    <label for="name">Nuevo nombre:</label>
+                    <input type="text" class="form-control" placeholder="josemakina" id="name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="pin">Nuevo PIN:</label>
                     <input type="password" class="form-control" placeholder="1234" id="pin" required>
                     <br><br><br>
-                    <button type="button" class="btn btn-primary" id="btn-add" onclick="add()">Registrarse</button>
+                    <button type="button" class="btn btn-primary" id="btn-update" onclick="update()">Modificar</button>
                     <button type="button" class="btn btn-primary" id="btn-back" onclick="back()">Volver</button>
                     <div class="alert alert-danger alert-dismissible" style="display:none;" id="error">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>ERROR!</strong> Error al añadir.
+                        <strong>ERROR!</strong> Fallo al actualizar.
                       </div>
                 </div>
             </div>
             </div>
-            <script src="../js/add.js"></script>
+            <script src="../js/update.js"></script>
         
     </body>
 </html>
